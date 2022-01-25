@@ -85,7 +85,7 @@ if __name__ == '__main__' :
     plt.ion()
     fig, ax = plt.subplots(2,2)
     fig.suptitle('Red -> Left Track | Blue -> Right Track', fontsize=15)
-    rospy.Subscriber('chatter', String , plotting)
+    rospy.Subscriber('motor_data', String , plotting)
     
      
     rospy.spin()
